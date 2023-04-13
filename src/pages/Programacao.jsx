@@ -1,11 +1,12 @@
 import React from 'react';
 import Audio from '../components/Audio';
+import Header from '../components/Header';
 
 function Contato() {
   return (
     <>
-      <h1>Programação</h1>
       <Audio />
+      <Header />
     </>
   );
 }

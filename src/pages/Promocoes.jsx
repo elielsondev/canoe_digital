@@ -1,11 +1,12 @@
 import React from 'react';
 import Audio from '../components/Audio';
+import Header from '../components/Header';
 
 function Promocoes() {
   return (
     <>
-      <h1>Promoções</h1>
       <Audio />
+      <Header />
     </>
   );
 }

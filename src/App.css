@@ -3,3 +3,129 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/*
+  color: #412a9c,
+  color: #1b66ff,
+  color: #ffc300,
+  color: #d2ff1f,
+  color: #f7f7f7
+*/
+
+/* 
+  font-family: 'Anton', sans-serif;
+  font-family: 'Signika', sans-serif;
+*/
+
+/* Componentes do Audio.jsx */
+#radio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(-45deg, #412a9c, #1b66ff, #f7f7f7, #ffc300, #d2ff1f);
+	background-size: 500% 500%;
+	animation: gradient 10s ease infinite;
+	height: 15vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.line {
+  width: 60px;
+  color: red;
+  height: 5rem;
+  overflow: hidden;
+  padding: 0;
+  margin: 5px;
+  text-align: center;
+}
+
+.flipX {
+  animation: 5s anim-flipX ease infinite;
+}
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90def);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+}
+
+#textSup {
+  color: #000000;
+  font-weight: 900;
+}
+
+#textInf {
+  color: #F7F7F7;
+  font-weight: 600;
+}
+
+#player {
+  border-radius: 50%;
+}
+
+/* Componentes do Header.jsx */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b66ff;
+  -webkit-box-shadow: 1px 5px 28px -3px rgba(255,195,0,0.63); 
+  box-shadow: 1px 5px 28px -3px rgba(255,195,0,0.63);
+}
+
+#logoAndName {
+  display: flex;
+  align-items: center;
+}
+
+#logoAndName > h1 {
+  font-size: 25px;
+  font-family: 'Anton', sans-serif;
+  color:#f7f7f7;
+  margin-left: -35px;
+}
+
+#menu {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+}
+
+#menu > h3 {
+  padding: 10px;
+  border-radius: 20px;
+  color: #f7f7f7;
+  font-family: 'Signika', sans-serif;
+  /*Fonte: https://html-css-js.com/css/generator/box-shadow/*/
+  -webkit-box-shadow: inset 2px 5px 24px -4px #F7F7F7; 
+  box-shadow: inset 2px 5px 24px -4px #F7F7F7;
+  text-align: center;
+}
+
+#menu > h3:hover {
+  background-color: #f7f7f7;
+  color: #1b66ff;
+  -webkit-box-shadow: inset 2px 5px 24px -4px #1b66ff; 
+  box-shadow: inset 2px 5px 24px -4px #1b66ff;
+}

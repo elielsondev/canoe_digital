@@ -1,11 +1,12 @@
 import React from "react";
 import Audio from "../components/Audio";
+import Header from "../components/Header";
 
 function ACanoeDigital() {
   return (
     <>
-      <h1>A Canoé Digital</h1>
       <Audio />
+      <Header />
     </>
   );
 }

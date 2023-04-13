@@ -1,16 +1,20 @@
 import React from "react";
+import logo from '../images/logo.png';
+import play from '../images/play.png'
 
 function Audio() {
   return (
-    <div>
-      <h1>NO AR</h1>
-      <img src="" alt="Anime" />
+    <div id='radio'>
+      <div className="line">
+        <h1 className="flipX">NO AR</h1>
+      </div>
+      <img src={logo} alt="Anime" width={100}/>
       <div>
-        <p>TÀ NA CANOÉ, TÁ BOM DEMAIS</p>
-        <p>CANOÈ DIGITAL EM GOIANA-PE</p>
+        <p id='textSup'>TÀ NA CANOÉ, TÁ BOM DEMAIS</p>
+        <p id='textInf'>CANOÈ DIGITAL EM GOIANA-PE</p>
       </div>
 
-      <img src="" alt="Player" />
+      <img id="player" src={play} alt="Player" width={50} />
     </div>
   );
 }
