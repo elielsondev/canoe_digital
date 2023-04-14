@@ -14,7 +14,6 @@ function Header() {
       <nav id="menu">
         <h3 onClick={() => navigate('/')}>Home</h3>
         <h3 onClick={() => navigate('/sobre')}>A Canoé Digital</h3>
-        <h3 onClick={() => navigate('/promocoes')}>Promoções</h3>
         <h3 onClick={() => navigate('/programacao')}>Programação</h3>
         <h3 onClick={() => navigate('/contato')}>Contato</h3>
       </nav>

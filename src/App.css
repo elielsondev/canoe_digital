@@ -88,6 +88,7 @@
 #header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #1b66ff;
   -webkit-box-shadow: 1px 5px 28px -3px rgba(255,195,0,0.63); 
@@ -96,6 +97,8 @@
 
 #logoAndName {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -110,6 +113,7 @@
   display: flex;
   gap: 15px;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 #menu > h3 {
@@ -129,3 +133,21 @@
   -webkit-box-shadow: inset 2px 5px 24px -4px #1b66ff; 
   box-shadow: inset 2px 5px 24px -4px #1b66ff;
 }
+
+/* Componentes do Home.jsx */
+#gallery {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  text-align: center;
+  color: #ffc300;
+  background-color: #F7F7F7;
+}
+
+#imagem #video {
+  flex-wrap: wrap;
+  width: 50%;
+  align-items: center;
+}
+
+
