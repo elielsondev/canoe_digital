@@ -162,3 +162,35 @@
   height: 30px;
 }
 
+/* Componente SocialMedia.jsx */
+#footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #ffc300;
+  color: #1b66ff;
+  border: none;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin-top: 15px;
+  bottom: 0;
+  padding-bottom: 15px;
+}
+
+/* Componente Gallery.jsx */
+#about {
+  margin: 30px;
+  height: 400px;
+  width: 75rem;
+  align-items: center;
+}
+
+#about h1 {
+  color: #ffc300;
+}
+
+#about p {
+  color: #1b66ff;
+}
