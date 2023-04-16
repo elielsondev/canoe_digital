@@ -6,7 +6,7 @@ function Gallery() {
   return (
     <>
       <figure>
-        <img src={bannerHome} alt="banner" width="100%" height="400px" />
+        <img className="mainBanner"src={bannerHome} alt="banner" />
       </figure>
       <section id="gallery">
         <div id="video">

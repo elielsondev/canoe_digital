@@ -7,8 +7,6 @@ function Aplicativo() {
         id="bannerAplicativo"
         src="https://pbr-def.srvsite.com/img/app/banner-f2.jpg"
         alt="banner baixe o App"
-        width="100%"
-        height="30%"
       />
       <a
         href="https://play.google.com/store/apps/details?id=net.hdradios.radiocanoedigital"

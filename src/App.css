@@ -54,6 +54,7 @@
 .flipX {
   animation: 5s anim-flipX ease infinite;
 }
+
 @keyframes anim-flipX {
   0% {
     opacity: 0;
@@ -100,13 +101,18 @@
   align-items: center;
   flex-wrap: wrap;
   align-items: center;
+  margin: -40px;
 }
 
 #logoAndName > h1 {
   font-size: 25px;
   font-family: 'Anton', sans-serif;
   color:#f7f7f7;
-  margin-left: -35px;
+}
+
+#logoMain {
+  z-index: 1;
+  margin-left: 3rem;
 }
 
 #menu {
@@ -125,6 +131,8 @@
   -webkit-box-shadow: inset 2px 5px 24px -4px #F7F7F7; 
   box-shadow: inset 2px 5px 24px -4px #F7F7F7;
   text-align: center;
+  font-size: 100%;
+  width: auto;
 }
 
 #menu > h3:hover {
@@ -135,15 +143,6 @@
 }
 
 /* Componentes do Home.jsx */
-#gallery {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-  text-align: center;
-  color: #ffc300;
-  background-color: #F7F7F7;
-}
-
 #imagem #video {
   flex-wrap: wrap;
   width: 50%;
@@ -151,38 +150,25 @@
 }
 
 /* Componente SocialMedia.jsx */
-
-#socialMedia {
-  padding: 1rem;
-}
-
 .media {
-  margin: 5px;
-  width: 30px;
-  height: 30px;
+  margin: 0.5rem;
+  width: 2rem;
 }
 
-/* Componente SocialMedia.jsx */
+/* Componente Footer.jsx */
 #footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #ffc300;
-  color: #1b66ff;
-  border: none;
-  position: relative;
+  flex-direction: column;
   width: 100%;
-  height: 60px;
-  margin-top: 15px;
-  bottom: 0;
-  padding-bottom: 15px;
 }
 
-/* Componente Gallery.jsx */
+/* Componente Sobre.jsx */
 #about {
   margin: 30px;
-  height: 400px;
+  height: 25rem;
   width: 75rem;
   align-items: center;
 }
@@ -198,11 +184,67 @@
 /* Componente Aplicativo.jsx */
 #bannerAplicativo {
   z-index: 1;
+  width: 100%;
 }
 
 #logoGooglePlay {
   z-index: 2;
-  margin-top: -250px ;
-  margin-left: 750px;
+  margin-top: -20% ;
+  margin-left: 50%;
   width: 25%;
+}
+
+/* Componente Gallery.jsx */
+.mainBanner {
+  width: 100%;
+  height: 20%;
+}
+
+#gallery {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+  text-align: center;
+  color: #ffc300;
+  background-color: #F7F7F7;
+}
+
+#album img {
+  width: 25%;
+  height: 25%;
+}
+
+/**/
+
+#programmingGrid {
+  margin: 30px;
+  height: 25rem;
+  width: 75rem;
+  align-items: center;
+}
+
+#programmingGrid h1 {
+  color: #ffc300;
+}
+
+#programmingGrid p {
+  color: #1b66ff;
+}
+
+/**/
+#contact{
+  margin: 30px;
+  height: 25rem;
+  width: 75rem;
+  align-items: center;
+}
+
+#contact h1 {
+  color: #ffc300;
+}
+
+#contact h3 {
+  color: #1b66ff;
+  margin: 15px;
 }

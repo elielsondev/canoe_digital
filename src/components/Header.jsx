@@ -8,7 +8,7 @@ function Header() {
   return (
     <header id="header">
       <div id='logoAndName'>
-        <img src={logo} alt="Logo Canoé Digital" width={150} />
+        <img id="logoMain" src={logo} alt="Logo Canoé Digital" width={150} />
         <h1>Canoé Digital FM</h1>
       </div>
 
@@ -18,8 +18,7 @@ function Header() {
         <h3 onClick={() => navigate('/programacao')}>Programação</h3>
         <h3 onClick={() => navigate('/contato')}>Contato</h3>
       </nav>
-
-      <SocialMedia />
+        <SocialMedia />
     </header>
   );
 }
