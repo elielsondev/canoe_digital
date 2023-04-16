@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../images/logo.png";
 import { useNavigate } from "react-router-dom";
+import SocialMedia from "./SocialMedia";
 
 function Header() {
   const navigate = useNavigate();
@@ -17,6 +18,8 @@ function Header() {
         <h3 onClick={() => navigate('/programacao')}>Programação</h3>
         <h3 onClick={() => navigate('/contato')}>Contato</h3>
       </nav>
+
+      <SocialMedia />
     </header>
   );
 }

@@ -150,4 +150,15 @@
   align-items: center;
 }
 
+/* Componente SocialMedia.jsx */
+
+#socialMedia {
+  padding: 1rem;
+}
+
+.media {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+}
 

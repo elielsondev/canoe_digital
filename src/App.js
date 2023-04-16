@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import ACanoeDigital from './pages/ACanoeDigital';
 import Programacao from './pages/Programacao';
 import Contato from './pages/Contato';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Route path='sobre' element={ <ACanoeDigital /> } />
       <Route path='programacao' element={ <Programacao /> } />
       <Route path='contato' element={ <Contato /> } />
-      <Route path='*' element={ <h1>Not Found</h1> } />
+      <Route path='*' element={ <NotFound /> } />
     </Routes>
   );
 }
