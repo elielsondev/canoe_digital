@@ -194,3 +194,15 @@
 #about p {
   color: #1b66ff;
 }
+
+/* Componente Aplicativo.jsx */
+#bannerAplicativo {
+  z-index: 1;
+}
+
+#logoGooglePlay {
+  z-index: 2;
+  margin-top: -250px ;
+  margin-left: 750px;
+  width: 25%;
+}
