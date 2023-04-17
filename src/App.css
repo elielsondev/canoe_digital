@@ -211,16 +211,15 @@
 }
 
 #album img {
-  margin: 3px;
-  width: 12rem;
-  height: 6rem;
+  margin: 2px;
+  width: 35vh;
   border-radius: 10px;
 }
 
 #video iframe {
-  margin: 3px;
-  width: 12rem;
-  height: 6rem;
+  margin: 2px;
+  width: 30vh;
+
   border-radius: 10px;
 }
 
