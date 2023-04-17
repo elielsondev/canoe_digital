@@ -211,8 +211,17 @@
 }
 
 #album img {
-  width: 25%;
-  height: 25%;
+  margin: 3px;
+  width: 12rem;
+  height: 6rem;
+  border-radius: 10px;
+}
+
+#video iframe {
+  margin: 3px;
+  width: 12rem;
+  height: 6rem;
+  border-radius: 10px;
 }
 
 /**/
