@@ -1,9 +1,8 @@
 import React from "react";
-import play from "../images/play.png";
-import pause from "../images/pause.png";
+import ReactAudioPlayer from 'react-audio-player';
 
 function Audio() {
-  const player = [play, pause];
+
 
   return (
     <div id="radio">
@@ -16,7 +15,11 @@ function Audio() {
         <p id="textInf">CANOÈ DIGITAL EM GOIANA-PE</p>
       </div>
 
-      <img id="player" src={player[0]} alt="Player" width={50} />
+      <ReactAudioPlayer
+        src="https://cc2.streammaximum.com:20003/stream"
+        autoPlay="true"
+        controls
+      />
     </div>
   );
 }
