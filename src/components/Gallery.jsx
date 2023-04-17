@@ -13,8 +13,9 @@ function Gallery() {
         <div id="videos">
           <h1>Videos</h1>
           <div id="video">
-            { videos.map((video) => {
+            { videos.map((video, i) => {
               return (<iframe
+              key={`video${i + 1}`}
               src={video}
               title="YouTube video player"
               frameborder="0"
@@ -27,8 +28,8 @@ function Gallery() {
         <div id="image">
           <h1>Fotos</h1>
           <figure id="album">
-            { albuns.map((album) => (
-              <img src={album} alt="Imagem" />
+            { albuns.map((album, i) => (
+              <img key={`img${i + 1}`} src={album} alt="Imagem" />
             )) }
           </figure>
         </div>

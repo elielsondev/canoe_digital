@@ -1,8 +1,10 @@
 import React from "react";
-import logo from "../images/logo.png";
 import play from "../images/play.png";
+import pause from "../images/pause.png";
 
 function Audio() {
+  const player = [play, pause];
+
   return (
     <div id="radio">
       <div className="line">
@@ -14,7 +16,7 @@ function Audio() {
         <p id="textInf">CANOÈ DIGITAL EM GOIANA-PE</p>
       </div>
 
-      <img id="player" src={play} alt="Player" width={50} />
+      <img id="player" src={player[0]} alt="Player" width={50} />
     </div>
   );
 }

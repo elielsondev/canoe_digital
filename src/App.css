@@ -220,7 +220,6 @@
 #video iframe {
   margin: 2px;
   width: 30vh;
-
   border-radius: 10px;
 }
 
@@ -256,4 +255,10 @@
 #contact h3 {
   color: #1b66ff;
   margin: 15px;
+}
+
+a {
+  text-decoration: none;
+  color:#ffc300;
+  text-shadow: 2px 1px 1px #1B66FF;
 }
