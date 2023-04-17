@@ -9,8 +9,6 @@ function Audio() {
         <h1 className="flipX">NO AR</h1>
       </div>
 
-      <img src={logo} alt="Anime" width={100} />
-
       <div>
         <p id="textSup">TÀ NA CANOÉ, TÁ BOM DEMAIS</p>
         <p id="textInf">CANOÈ DIGITAL EM GOIANA-PE</p>
