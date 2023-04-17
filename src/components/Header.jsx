@@ -8,7 +8,7 @@ function Header() {
   return (
     <header id="header">
       <div id='logoAndName'>
-        <img id="logoMain" src={logo} alt="Logo Canoé Digital" width={150} />
+        <img id="logoMain" src={logo} alt="Logo Canoé Digital" />
         <h1>Canoé Digital FM</h1>
       </div>
 
