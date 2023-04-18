@@ -6,11 +6,14 @@ import Programacao from "./pages/Programacao";
 import Contato from "./pages/Contato";
 import NotFound from "./pages/NotFound";
 import Audio from "./components/Audio";
+import WhatsAppFly from "./components/WhatsAppFly";
 
 function App() {
   return (
     <>
       <Audio />
+
+      <WhatsAppFly />
 
       <Routes>
         <Route path="/" element={<Home />} />
