@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+#whatsappButtom {
+  background: #0dc152;
+  width: 75px;
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  border-radius: 50%;
+  padding: 18px;
+  z-index: 10001;
+  box-shadow: 0 0 0 rgb(37, 211, 102);
+  animation: pulse 2s infinite;
+}
+
 /*
   color: #412a9c,
   color: #1b66ff,
@@ -20,13 +33,15 @@
 /* Componentes do Audio.jsx */
 #radio {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-wrap: nowrap;
   align-items: center;
-  padding: 10px;
+  text-align: center;
+  margin-bottom:5px;
   background: linear-gradient(-45deg, #412a9c, #1b66ff, #f7f7f7, #ffc300, #d2ff1f);
 	background-size: 500% 500%;
 	animation: gradient 10s ease infinite;
-	height: 15vh;
+  height: 14vh;
 }
 
 @keyframes gradient {
@@ -42,16 +57,18 @@
 }
 
 .line {
-  width: 60px;
+  width: 14vh;
   color: red;
-  height: 5rem;
+  height: 14vh;
   overflow: hidden;
   padding: 0;
-  margin: 5px;
-  text-align: center;
+  margin: 5vh;
+  align-items: center;
 }
 
 .flipX {
+  font-size: 2em;
+  margin: 0em;
   animation: 5s anim-flipX ease infinite;
 }
 
@@ -82,7 +99,10 @@
 }
 
 #player {
-  border-radius: 50%;
+  width: 20%;
+  height: 50%;
+  border: none;
+  border-radius: 10px;
 }
 
 /* Componentes do Header.jsx */
@@ -91,40 +111,26 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #1b66ff;
+  background-color: #1B66FF;
   -webkit-box-shadow: 1px 5px 28px -3px rgba(255,195,0,0.63); 
   box-shadow: 1px 5px 28px -3px rgba(255,195,0,0.63);
 }
 
-#logoAndName {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: -40px;
-}
-
-#logoAndName > h1 {
-  font-size: 25px;
-  font-family: 'Anton', sans-serif;
-  color:#f7f7f7;
-}
-
 #logoMain {
   z-index: 1;
-  margin-left: 3rem;
-  width: 170px;
+  margin-left: 10vh;
+  width: 25vh;
 }
 
 #menu {
   display: flex;
-  gap: 15px;
-  padding: 20px;
-  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+  flex-wrap: nowrap;
 }
 
 #menu > h3 {
-  padding: 10px;
+  padding: 2vh;
   border-radius: 20px;
   color: #f7f7f7;
   font-family: 'Signika', sans-serif;
@@ -132,7 +138,7 @@
   -webkit-box-shadow: inset 2px 5px 24px -4px #F7F7F7; 
   box-shadow: inset 2px 5px 24px -4px #F7F7F7;
   text-align: center;
-  font-size: 100%;
+  font-size: 2.5vh;
   width: auto;
 }
 
@@ -164,14 +170,16 @@
   text-align: center;
   flex-direction: column;
   width: 100%;
+  background-color: #d2ff1f;
 }
 
 /* Componente Sobre.jsx */
 #about {
+  display: flex;
   margin: 30px;
-  height: 25rem;
-  width: 75rem;
-  align-items: center;
+  height: 20rem;
+  width: 80%;
+  flex-wrap: wrap;
 }
 
 #about h1 {
@@ -197,6 +205,7 @@
 
 /* Componente Gallery.jsx */
 .mainBanner {
+  margin-top: 10vh;
   width: 100%;
   height: 20%;
 }
@@ -262,3 +271,46 @@ a {
   color:#ffc300;
   text-shadow: 2px 1px 1px #1B66FF;
 }
+
+@media only screen and (max-width: 660px) {
+  body {
+    background-color: #ffc300;
+  }
+
+  /* Componentes do Audio.jsx */
+  #radio {
+    align-items: center;
+    text-align: center;
+  }
+
+  .flipX {
+    font-size: 1.5em;
+    margin-top:  10px;
+    margin: 0em;
+  }
+
+  #textSup {
+    font-size: 80%;
+  }
+  
+  #textInf {
+    font-size: 80%;
+  }
+
+  /* Componentes do Header.jsx */
+  #logoMain {
+    width: 18vh;
+  }
+  
+  #menu {
+    gap: 3px;
+    padding: 5px;
+  }
+  
+  #menu > h3 {
+    font-size: 1vh;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 360px) {}

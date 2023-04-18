@@ -1,9 +1,6 @@
 import React from "react";
-import ReactAudioPlayer from 'react-audio-player';
 
 function Audio() {
-
-
   return (
     <div id="radio">
       <div className="line">
@@ -15,11 +12,11 @@ function Audio() {
         <p id="textInf">CANOÈ DIGITAL EM GOIANA-PE</p>
       </div>
 
-      <ReactAudioPlayer
-        src="https://cc2.streammaximum.com:20003/stream"
-        autoPlay="true"
-        controls
-      />
+      <iframe
+        id="player"
+        src="https://player.hdradios.net/player-topo-html5/8104/000000"
+        preload
+      ></iframe>
     </div>
   );
 }
