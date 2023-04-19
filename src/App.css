@@ -203,21 +203,30 @@
   height: 20%;
 }
 
-#gallery {
-  background-color: #F7F7F7;
+.gallery #image {
+  margin-top: 5vh;
+  width: 105%;
   font-size: 1rem;
   flex-direction: column;
   display: flex;
-  margin: 10px;
   text-align: center;
   color: #ffc300;
 }
 
 #album img {
   margin: 2px;
-  width: 400px;
+  width: 80vh;
   border-radius: 10px;
   flex-wrap: wrap;
+}
+
+.gallery #videos {
+  font-size: 1rem;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  margin: 20px;
+  color: #ffc300;
 }
 
 #video iframe {

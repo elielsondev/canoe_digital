@@ -1,7 +1,6 @@
 import React from "react";
 import bannerHome from "../images/banner_home.png";
 import { videos } from "../images/dataVideos";
-import { albuns } from "../images/dataImages";
 
 function Gallery() {
   return (
@@ -9,7 +8,7 @@ function Gallery() {
       <figure>
         <img className="mainBanner" src={bannerHome} alt="banner" />
       </figure>
-      <section id="gallery">
+      <section className="gallery">
         <div id="videos">
           <h1>Videos</h1>
           <div id="video">
@@ -24,14 +23,6 @@ function Gallery() {
             ></iframe>);
             }) }
           </div>
-        </div>
-        <div id="image">
-          <h1>Fotos</h1>
-          <figure id="album">
-            { albuns.map((album, i) => (
-              <img key={`img${i + 1}`} src={album} alt="Imagem" />
-            )) }
-          </figure>
         </div>
       </section>
     </>
