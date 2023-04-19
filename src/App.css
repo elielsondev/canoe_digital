@@ -215,8 +215,7 @@
 
 #album img {
   margin: 2px;
-  width: 40%;
-  height: auto;
+  width: 400px;
   border-radius: 10px;
   flex-wrap: wrap;
 }
@@ -230,9 +229,9 @@
 }
 
 #video iframe:hover {
-  width: 680px;
-  height: 360px;
-  transition: 5s;
+  width: 460px;
+  height: 260px;
+  transition: 3s;
 }
 
 /* Componente Sobre.jsx */
