@@ -67,8 +67,11 @@
 }
 
 .flipX {
-  font-size: 2em;
-  margin: 5px;
+  font-size: 4.5vh;
+  margin-left: -7.5px;
+  margin-top: 5px;
+  padding-left: 3vw;
+  padding-right: 3vw;
   animation: 5s anim-flipX ease infinite;
 }
 
@@ -90,11 +93,13 @@
 
 #textSup {
   color: #000000;
+  font-size: 2.5vh;
   font-weight: 900;
 }
 
 #textInf {
   color: #F7F7F7;
+  font-size: 2.5vh;
   font-weight: 600;
 }
 
@@ -127,6 +132,7 @@
   display: flex;
   gap: 5px;
   flex-wrap: nowrap;
+  padding: 2px;
 }
 
 #menu > h3 {
@@ -145,22 +151,29 @@
 #menu > h3:hover {
   background-color: #f7f7f7;
   color: #1b66ff;
+  cursor: pointer;
   -webkit-box-shadow: inset 2px 5px 24px -4px #1b66ff; 
   box-shadow: inset 2px 5px 24px -4px #1b66ff;
 }
 
-/* Componentes do Home.jsx */
-#imagem #video {
-  flex-wrap: wrap;
-  width: 50%;
-  align-items: center;
-}
-
 /* Componente SocialMedia.jsx */
 .media {
-  padding-left: 2px;
-  padding-right: 2px;
+  padding: 3px;
   width: 2rem;
+}
+
+/* Componente Aplicativo.jsx */
+#bannerAplicativo {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  height: 20vw;
+}
+
+#logoGooglePlay {
+  margin-top: -30% ;
+  margin-left: 55%;
+  width: 20%;
 }
 
 /* Componente Footer.jsx */
@@ -173,33 +186,14 @@
   width: 100%;
 }
 
-/* Componente Sobre.jsx */
-#about {
-  display: flex;
-  margin: 30px;
-  min-height: 20rem;
-  width: 90%;
-  min-height: 100%;
+/* ESTILOS DOS COMPONENTES POR ROTAS */
+
+/* Componentes do Home.jsx */
+#imagem #video {
   flex-wrap: wrap;
-}
-
-#about h1 {
-  color: #ffc300;
-}
-
-#about p {
-  color: #1b66ff;
-}
-
-/* Componente Aplicativo.jsx */
-#bannerAplicativo {
   width: 100%;
-}
-
-#logoGooglePlay {
-  margin-top: -20% ;
-  margin-left: 50%;
-  width: 25%;
+  height: auto;
+  align-items: center;
 }
 
 /* Componente Gallery.jsx */
@@ -210,105 +204,96 @@
 }
 
 #gallery {
+  background-color: #F7F7F7;
   font-size: 1rem;
+  flex-direction: column;
   display: flex;
-  justify-content: space-around;
-  margin: 15px;
+  margin: 10px;
   text-align: center;
   color: #ffc300;
-  background-color: #F7F7F7;
 }
 
 #album img {
   margin: 2px;
-  width: 35vh;
+  width: 40%;
+  height: auto;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
 
 #video iframe {
   margin: 2px;
-  width: 30vh;
+  width: 340px;
+  height: 190px;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
 
-/**/
+#video iframe:hover {
+  width: 680px;
+  height: 360px;
+  transition: 5s;
+}
 
+/* Componente Sobre.jsx */
+#about {
+  margin: 30px;
+  height: auto;
+  width: 90%;
+  align-items: center;
+}
+
+#about h1 {
+  font-size: 3vw;
+  color: #ffc300;
+}
+
+#about p {
+  font-size: 3vh;
+  color: #1b66ff;
+}
+
+/* Componente ProgramingGrid.jsx */
 #programmingGrid {
   margin: 30px;
-  height: 25rem;
-  width: 75rem;
+  height: auto;
+  width: 90%;
   align-items: center;
 }
 
 #programmingGrid h1 {
   color: #ffc300;
+  font-size: 3vw;
 }
 
 #programmingGrid p {
   color: #1b66ff;
+  font-size: 3vh;
 }
 
-/**/
+/* Componente Contact.jsx */
 #contact{
   margin: 30px;
-  height: 25rem;
-  width: 75rem;
+  height: auto;
+  width: 90%;
   align-items: center;
 }
 
 #contact h1 {
   color: #ffc300;
+  font-size: 3vw;
 }
 
 #contact h3 {
   color: #1b66ff;
   margin: 15px;
+  font-size: 2vw;
 }
 
-a {
+#contact a {
   text-decoration: none;
   color:#ffc300;
   text-shadow: 2px 1px 1px #1B66FF;
 }
 
-@media only screen and (max-width: 660px) {
-  body {
-    background-color: #ffc300;
-  }
-
-  /* Componentes do Audio.jsx */
-  #radio {
-    align-items: center;
-    text-align: center;
-  }
-
-  .flipX {
-    font-size: 1.5em;
-    margin-top:  10px;
-  }
-
-  #textSup {
-    font-size: 80%;
-  }
-  
-  #textInf {
-    font-size: 80%;
-  }
-
-  /* Componentes do Header.jsx */
-  #logoMain {
-    width: 18vh;
-  }
-  
-  #menu {
-    gap: 3px;
-    padding: 5px;
-  }
-  
-  #menu > h3 {
-    font-size: 1vh;
-    width: auto;
-  }
-}
-
-@media only screen and (max-width: 360px) {}
+@media only screen and (max-width: 640px) {}
