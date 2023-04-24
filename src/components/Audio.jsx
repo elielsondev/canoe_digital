@@ -13,9 +13,10 @@ function Audio() {
       </div>
 
       <iframe
+        title="Canoé Digital"
         id="player"
+        frameboarder="0"
         src="https://player.hdradios.net/player-topo-html5/8104/000000"
-        preload
       ></iframe>
     </div>
   );
