@@ -116,7 +116,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  height: 50px;
+  height: 7vh;
   background-color: #002d86;
   -webkit-box-shadow: 1px 5px 28px -3px rgba(255,195,0,0.63); 
   box-shadow: 1px 5px 28px -3px rgba(255,195,0,0.63);
@@ -125,7 +125,7 @@
 #logoMain {
   z-index: 1000;
   margin-left: 3vh;
-  width: 25vh;
+  width: 20vh;
 }
 
 #menu-hamburguer {
@@ -137,11 +137,10 @@
   display: flex;
   gap: 5px;
   flex-wrap: nowrap;
-  padding: 2px;
 }
 
 #menu > h3 {
-  padding: 2vh;
+  padding: 1vh;
   border-radius: 20px;
   color: #f7f7f7;
   font-family: 'Signika', sans-serif;
@@ -163,8 +162,8 @@
 
 /* Componente SocialMedia.jsx */
 .media {
-  padding: 3px;
-  width: 4vw;
+  margin: 5px;
+  width: 30px;
 }
 
 /* Componente Aplicativo.jsx */
@@ -208,17 +207,19 @@
 }
 
 .gallery #image {
-  width: 100%;
+  width: 97vw;
   margin-top: 5vh;
   font-size: 1rem;
   flex-direction: column;
   display: flex;
   color: #ffc300;
+  align-items: center;
 }
 
 #album img {
   margin: 2px;
-  width: 40vw;
+  margin-left: 2vw;
+  width: 46vw;
   border-radius: 10px;
   flex-wrap: wrap;
 }
@@ -248,38 +249,44 @@
 
 /* Componente Sobre.jsx */
 #about {
-  margin: 30px;
+  display: flex;
+  margin-top: 2vh;
   height: auto;
-  width: 90%;
+  width: 98vw;
   align-items: center;
+  flex-direction: column;
 }
 
 #about h1 {
-  font-size: 3vw;
+  font-size: 3.5vw;
   color: #ffc300;
 }
 
 #about p {
   font-size: 3vh;
   color: #1b66ff;
+  width: 80%;
+  font-size: 1.5vw;
 }
 
 /* Componente ProgramingGrid.jsx */
 #programmingGrid {
-  margin: 30px;
+  margin: 20px;
   height: auto;
-  width: 90%;
+  width: 98vw;
   align-items: center;
 }
 
 #programmingGrid h1 {
+  font-size: 3.5vw;
   color: #ffc300;
-  font-size: 3vw;
 }
 
 #programmingGrid p {
-  color: #1b66ff;
   font-size: 3vh;
+  color: #1b66ff;
+  width: 80%;
+  font-size: 1.5vw;
 }
 
 /* Componente Contact.jsx */
@@ -291,8 +298,8 @@
 }
 
 #contact h1 {
+  font-size: 3.5vw;
   color: #ffc300;
-  font-size: 3vw;
 }
 
 #contact h3 {
@@ -307,7 +314,7 @@
   text-shadow: 2px 1px 1px #1B66FF;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
   #menu-hamburguer {
     display: flex;
     visibility: visible;
@@ -322,7 +329,7 @@
     display: block;
     visibility: visible;
     position: absolute;
-    top: 21vh;
+    top: 17vh;
     right: 0;
     width: 100vw;
     height: 90vh;
@@ -341,11 +348,8 @@
   }
 
   #logoMain {
-    width: 20vmax;
-  }
-
-  h1 {
-    font-size: 5vw;
+    margin-left: 1.5vh;
+    width: 17vh;
   }
 }
 
@@ -374,14 +378,19 @@
   }
 
   #logoMain {
-    width: 15vmax;
-    margin-left: -1.5vw;
+    width: 12vmax;
+    margin-left: -1vw;
   }
 
-  .media {
-    padding: 2px;
-    width: 10vw;
-    height: 10vw;
+  #image {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  header .media {
+    margin: -0.5px;
+    width: 20px;
   }
 
   .gallery #videos {
