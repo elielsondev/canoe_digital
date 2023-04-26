@@ -69,7 +69,7 @@
 .flipX {
   font-size: 4.5vh;
   margin-left: -7.5px;
-  margin-top: 5px;
+  margin-top: 10px;
   padding-left: 3vw;
   padding-right: 3vw;
   animation: 5s anim-flipX ease infinite;
@@ -174,9 +174,9 @@
 }
 
 #logoGooglePlay {
-  margin-top: -30% ;
-  margin-left: 55%;
-  width: 20%;
+  margin-top: -30vh ;
+  margin-left: 55vw;
+  width: 20vw;
 }
 
 /* Componente Footer.jsx */
@@ -247,65 +247,29 @@
   transition: 3s;
 }
 
-/* Componente Sobre.jsx */
-#about {
+/* Componente Sobre.jsx, ProgramingGrid.jsx, Contact.jsx */
+#about #programmingGrid #contact {
   display: flex;
   margin-top: 2vh;
   height: auto;
   width: 98vw;
-  align-items: center;
   flex-direction: column;
 }
 
-#about h1 {
+#about h1, #programmingGrid h1, #contact h1 {
+  margin-top: 3vh;
+  margin-left: 3vw;
   font-size: 3.5vw;
   color: #ffc300;
 }
 
-#about p {
+#about p, #programmingGrid p, #contact h3  {
+  margin-left: 3vw;
+  margin-bottom: 1vw;
   font-size: 3vh;
   color: #1b66ff;
-  width: 80%;
-  font-size: 1.5vw;
-}
-
-/* Componente ProgramingGrid.jsx */
-#programmingGrid {
-  margin: 20px;
-  height: auto;
-  width: 98vw;
-  align-items: center;
-}
-
-#programmingGrid h1 {
-  font-size: 3.5vw;
-  color: #ffc300;
-}
-
-#programmingGrid p {
-  font-size: 3vh;
-  color: #1b66ff;
-  width: 80%;
-  font-size: 1.5vw;
-}
-
-/* Componente Contact.jsx */
-#contact{
-  margin: 30px;
-  height: auto;
   width: 90%;
-  align-items: center;
-}
-
-#contact h1 {
-  font-size: 3.5vw;
-  color: #ffc300;
-}
-
-#contact h3 {
-  color: #1b66ff;
-  margin: 15px;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 #contact a {
@@ -314,7 +278,31 @@
   text-shadow: 2px 1px 1px #1B66FF;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 730px) {
+  .flipX {
+    font-size: 5vh;
+    margin-top: 1.5vh;
+    margin-left: 0.6vh;
+    padding: 0;
+  }
+
+  #textSup {
+    font-size: 1.9vw;
+    margin-left: -7vw;
+    margin-right: 5vw;
+  }
+  
+  #textInf {
+    font-size: 1.9vw;
+    margin-left: -7vw;
+    margin-right: 5vw;
+  }
+
+  #player {
+    width: 30vw;
+    height: 4vh;
+  }
+
   #menu-hamburguer {
     display: flex;
     visibility: visible;
@@ -329,10 +317,10 @@
     display: block;
     visibility: visible;
     position: absolute;
-    top: 17vh;
+    top: 18.6vh;
     right: 0;
     width: 100vw;
-    height: 90vh;
+    height: 40vh;
     background-color: #002d86;
     flex-direction: column;
     align-items: center;
@@ -342,39 +330,35 @@
     margin: 15px;
   }
 
-  header .media {
+  .media {
     padding: 2px;
-    width: 6vw;
+    width: 4vh;
   }
 
   #logoMain {
     margin-left: 1.5vh;
     width: 17vh;
   }
+
+  #footer {
+    font-size: 2vw;
+  }
 }
 
 @media only screen and (max-width: 374px) {
   .flipX {
-    font-size: 3.8vh;
-    margin-top: 15px;
+    font-size: 3.5vh;
+    margin-top: 3vh;
+    margin-left: 0.6vh;
     padding: 0;
   }
 
   #textSup {
-    font-size: 3vw;
-    margin-left: -10vw;
-    margin-right: 5vw;
+    font-size: 2.7vw;
   }
   
   #textInf {
-    font-size: 3vw;
-    margin-left: -10vw;
-    margin-right: 5vw;
-  }
-
-  #player {
-    width: 40vw;
-    height: 4vh;
+    font-size: 2.7vw;
   }
 
   #logoMain {
@@ -388,7 +372,7 @@
     text-align: center;
   }
 
-  header .media {
+  .media {
     margin: -0.5px;
     width: 20px;
   }
