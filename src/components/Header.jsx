@@ -11,10 +11,17 @@ function Header() {
   const menu = document.querySelector('#menu');
 
   const handleClick = () => {
-    if (menu.classList.toggle('active')) {
+    if (!menu.className) {
+      menu.classList.toggle('active');
+    } else {
       menu.classList.remove('active');
     }
-    return hamburguer.classList.toggle('active') && menu.classList.toggle('active');
+
+    if (!hamburguer.className) {
+      hamburguer.classList.toggle('active');
+    } else {
+      hamburguer.classList.remove('active');
+    }
   }
 
   return (
