@@ -8,7 +8,7 @@ function Audio() {
       </div>
 
       <div>
-        <p id="textSup">TÀ NA CANOÉ, TÁ BOM DEMAIS</p>
+        <p id="textSup">É SUCESSO? PASSA POR AQUI</p>
         <p id="textInf">CANOÈ DIGITAL EM GOIANA-PE</p>
       </div>
 

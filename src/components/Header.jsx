@@ -1,31 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../images/logo.png";
 import { useNavigate } from "react-router-dom";
 import SocialMedia from "./SocialMedia";
-import { Squash as Hamburger } from "hamburger-react";
+// import { Squash as Hamburger } from "hamburger-react";
 
 function Header() {
   const navigate = useNavigate();
-  const [statusToggled, setToggled] = useState(true);
+
+  const hamburguer = document.querySelector('#hamburguer');
+  const menu = document.querySelector('#menu');
+
+  const handleClick = () => {
+    if (menu.classList.toggle('active')) {
+      menu.classList.remove('active');
+    }
+    return hamburguer.classList.toggle('active') && menu.classList.toggle('active');
+  }
 
   return (
     <header id="header">
       <img id="logoMain" src={logo} alt="Logo Canoé Digital" />
 
-      <div onClick={() => setToggled(!statusToggled)} id="menu-hamburguer">
-        {/* Fonte: https://hamburger-react.netlify.app/ */}
-        <Hamburger
-          size={20}
-          label="Show menu"
-          color="#f7f7f7" 
-          onToggle={(statusToggled) => {
-            if (statusToggled) {
-               // open a menu
-               const menu = document.getElementById('menu');
-               menu.classList.toggle('active');
-            }
-          }}
-        />
+      <div
+        id="hamburguer"
+        onClick={ handleClick }
+      >
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </div>
 
       <nav id="menu">

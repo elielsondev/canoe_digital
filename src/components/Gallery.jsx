@@ -1,6 +1,7 @@
 import React from "react";
 import bannerHome from "../images/banner_home.png";
 import { videos } from "../images/dataVideos";
+import Anunciantes from "./Anunciantes";
 
 function Gallery() {
   return (
@@ -8,6 +9,9 @@ function Gallery() {
       <figure>
         <img className="mainBanner" src={bannerHome} alt="banner" />
       </figure>
+
+      <Anunciantes />
+      
       <section className="gallery">
         <div id="videos">
           <h1>Videos</h1>
