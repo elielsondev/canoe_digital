@@ -9,9 +9,6 @@ function Header() {
   const [statusToggle, setToggle] = useState(false);
 
   const menu = document.querySelector("#menu");
-  
-  console.log(statusToggle);
-  console.log(menu);
 
   return (
     <header id="header">
@@ -26,9 +23,9 @@ function Header() {
           color="#f7f7f7"
           size={20}
           onToggle={(toggle = statusToggle) => {
-            if (toggle) {
+            if (toggle === true) {
               menu.classList.toggle('active')
-            }
+            } 
           }}
         />
       </div>

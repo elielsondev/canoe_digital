@@ -316,6 +316,11 @@
     margin: 2vh;
   }
 
+  #menu.disabled {
+    display: none;
+    visibility: hidden;
+  }
+
   #hamburguer {
     display: block;
     visibility: visible;
