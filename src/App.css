@@ -126,6 +126,11 @@
   width: 20vh;
 }
 
+#hamburguer {
+  display: none;
+  visibility: hidden;
+}
+
 #menu {
   display: flex;
   gap: 5px;
@@ -286,7 +291,7 @@
   text-shadow: 2px 1px 1px #1B66FF;
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 999px) {  
   #menu {
     display: none;
     visibility: hidden;
@@ -304,10 +309,16 @@
     flex-direction: column;
     align-items: center;
     transition: 1s;
+    padding: 10px;
   }
 
   #menu.active h3 {
-    margin: 15px;
+    margin: 2vh;
+  }
+
+  #hamburguer {
+    display: block;
+    visibility: visible;
   }
 
   .media {
@@ -381,10 +392,10 @@
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
   .flipX {
-    font-size: 2vh;
-    margin-top: 50%;
+    font-size: 4vh;
+    margin-top: 20px;
   }
 
   #textSup, #textInf {
