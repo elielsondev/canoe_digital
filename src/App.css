@@ -88,18 +88,6 @@
   }
 }
 
-#textSup {
-  color: #000000;
-  font-size: 2.5vh;
-  font-weight: 900;
-}
-
-#textInf {
-  color: #F7F7F7;
-  font-size: 2.5vh;
-  font-weight: 600;
-}
-
 #player {
   width: 35vh;
   height: 6vh;
@@ -248,16 +236,10 @@
 
 #video iframe {
   margin: 2px;
-  width: 340px;
-  height: 190px;
+  width: 80vh;
+  height: 40vh;
   border-radius: 10px;
   flex-wrap: wrap;
-}
-
-#video iframe:hover {
-  width: 30vw;
-  height: 18vw;
-  transition: 2s;
 }
 
 /* Componente Sobre.jsx, ProgramingGrid.jsx, Contact.jsx */
@@ -347,11 +329,6 @@
     margin: 7px 25px;
   }
 
-  #textSup, #textInf {
-    font-size: 0.5rem;
-    margin-left: -8vh;
-  }
-
   #player {
     width: 20vh;
     height: 5vh;
@@ -386,26 +363,16 @@
   
   #video iframe {
     margin: 2px;
-    width: 30vh;
+    width: 40vh;
     height: 20vh;
   }
-  
-  #video iframe:hover {
-    max-width: 380px;
-    max-height: 240px;
-    transition: 3s;
-  }
+
 }
 
 @media only screen and (max-width: 400px) {
   .flipX {
     font-size: 4vh;
     margin-top: 20px;
-  }
-
-  #textSup, #textInf {
-    display: none;
-    visibility: hidden;
   }
 
   #player {

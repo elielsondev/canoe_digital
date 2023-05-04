@@ -7,11 +7,6 @@ function Audio() {
         <h1 className="flipX">NO AR</h1>
       </div>
 
-      <div>
-        <p id="textSup">É SUCESSO? PASSA POR AQUI</p>
-        <p id="textInf">CANOÈ DIGITAL EM GOIANA-PE</p>
-      </div>
-
       <iframe
         title="Canoé Digital"
         id="player"

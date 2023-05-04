@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../images/logo.png";
 import { useNavigate } from "react-router-dom";
 import SocialMedia from "./SocialMedia";
@@ -8,6 +8,11 @@ function Header() {
   const navigate = useNavigate();
   const [statusToggle, setToggle] = useState(false);
 
+  useEffect(() => {
+    if (statusToggle === false) menu.classList.toggle('active');
+    if (statusToggle === true) menu.classList.remove('active')
+  })
+
   const menu = document.querySelector("#menu");
 
   return (
@@ -16,17 +21,13 @@ function Header() {
 
       <div
         id="hamburguer"
-        onClick={() => statusToggle === true ? setToggle(false) : setToggle(true)}
+        onClick={() => setToggle(!statusToggle)}
       >
         <Hamburger
           label="Show menu"
           color="#f7f7f7"
           size={20}
-          onToggle={(toggle = statusToggle) => {
-            if (toggle === true) {
-              menu.classList.toggle('active')
-            } 
-          }}
+          onToggle={() => statusToggle}
         />
       </div>
 
