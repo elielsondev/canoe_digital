@@ -7,13 +7,14 @@ import { Squash as Hamburger } from "hamburger-react";
 function Header() {
   const navigate = useNavigate();
   const [statusToggle, setToggle] = useState(false);
+  
+  const menu = document.querySelector("#menu");
 
   useEffect(() => {
-    if (statusToggle === false) menu.classList.toggle('active');
-    if (statusToggle === true) menu.classList.remove('active')
+    if (statusToggle) {
+      menu.classList.toggle('active')
+    }
   })
-
-  const menu = document.querySelector("#menu");
 
   return (
     <header id="header">
@@ -27,7 +28,6 @@ function Header() {
           label="Show menu"
           color="#f7f7f7"
           size={20}
-          onToggle={() => statusToggle}
         />
       </div>
 
