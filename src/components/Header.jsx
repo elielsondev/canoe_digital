@@ -7,14 +7,13 @@ import { Squash as Hamburger } from "hamburger-react";
 function Header() {
   const navigate = useNavigate();
   const [statusToggle, setToggle] = useState(false);
+  const [nameClasse, setClasse] = useState('')
   
-  const menu = document.querySelector("#menu");
+  // https://pt.stackoverflow.com/questions/146423/como-adicionar-e-remover-classes-com-javascript
 
-  useEffect(() => {
-    if (statusToggle) {
-      menu.classList.toggle('active')
-    }
-  })
+  useEffect(() => {    
+    statusToggle ? setClasse('active') : setClasse('');
+  }, [statusToggle])
 
   return (
     <header id="header">
@@ -31,7 +30,7 @@ function Header() {
         />
       </div>
 
-      <nav id="menu">
+      <nav id="menu" className={nameClasse}>
         <h3 onClick={() => navigate("/")}>Home</h3>
         <h3 onClick={() => navigate("/sobre")}>A Canoé Digital</h3>
         <h3 onClick={() => navigate("/programacao")}>Programação</h3>
