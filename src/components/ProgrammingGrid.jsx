@@ -6,6 +6,7 @@ function ProgrammingGrid() {
       <h1>Programação</h1>
       <br />
       <p>Em manutenção, estamos organizando nossa programação pensando em você.</p>
+      <br />
     </section>
   );
 }

@@ -1,14 +1,12 @@
 import React from "react";
-import bannerHome from "../images/banner_home.png";
 import { videos } from "../images/dataVideos";
 import Anunciantes from "./Anunciantes";
+import SlideBanners from "./SlideBanners";
 
 function Gallery() {
   return (
     <>
-      <figure>
-        <img className="mainBanner" src={bannerHome} alt="banner" />
-      </figure>
+      <SlideBanners />
 
       <Anunciantes />
       
