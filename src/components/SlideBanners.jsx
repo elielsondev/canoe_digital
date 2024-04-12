@@ -35,22 +35,22 @@ function SlideBanners() {
       }}
     >
       <SwiperSlide>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="/" target="_blank" rel="noopener noreferrer">
             <img className="mainBanner" src={BANNER0} alt="banner" />
         </a>
       </SwiperSlide>
       <SwiperSlide>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/sandrodesignpb" target="_blank" rel="noopener noreferrer">
             <img className="mainBanner" src={BANNER1} alt="banner" />
         </a>
       </SwiperSlide>
       <SwiperSlide>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="/" target="_blank" rel="noopener noreferrer">
             <img className="mainBanner" src={BANNER2} alt="banner" />
         </a>
       </SwiperSlide>
       <SwiperSlide>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://api.whatsapp.com/send?phone=5581973205459" target="_blank" rel="noopener noreferrer">
             <img className="mainBanner" src={BANNER3} alt="banner" />
         </a>
       </SwiperSlide>
