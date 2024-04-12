@@ -1,5 +1,6 @@
 import React from "react";
 import NossaPraia from "./NossaPraia.jsx";
+import Anunciantes from "./Anunciantes.jsx";
 
 function Sobre() {
   return (
@@ -46,7 +47,7 @@ function Sobre() {
         do contexto social, oferecendo música e programação de boa qualidade a
         um público seleto – nosso melhor ouvinte.
       </p>
-
+      <Anunciantes />
       <NossaPraia />
     </section>
   );
