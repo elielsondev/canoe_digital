@@ -5,19 +5,19 @@ import anunciante4 from '../images/ANUNCIE-AQUI.png';
 
 const patrocinadores = [
     {
-        nome: "Sangraf - Fazendo acontecer!",
+        nome: "",
         banner: anunciante1,
     },
     {
-        nome: "Sangraf - Fazendo acontecer!",
+        nome: "",
         banner: anunciante2,
     },
     {
-        nome: "Divulgue Aqui 3",
+        nome: "",
         banner: anunciante3,
     },
     {
-        nome: "Divulgue Aqui 4",
+        nome: "",
         banner: anunciante4,
     }
 ];
