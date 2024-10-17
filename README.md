@@ -2,7 +2,7 @@
 
 **TODO O PROJETO FOI CRIADO EM REACT.JS**
 
-O site possui uma interface bastante intuitiva e simples, o cliente havia solicitado que incluisse algo que contemplasse também as pessoas surdas, depois de muitas pesquisas descubrimos o [VLibras](https://www.gov.br/governodigital/pt-br/vlibras) e implementamos ao nosso projeto.
+O site possui uma interface bastante intuitiva e simples, o cliente havia solicitado a inclusão de algo que contemplasse também as pessoas surdas, depois de muitas pesquisas descubrimos o [VLibras](https://www.gov.br/governodigital/pt-br/vlibras) e implementamos ao nosso projeto.
 
 ### O que é o VLibras?
 
